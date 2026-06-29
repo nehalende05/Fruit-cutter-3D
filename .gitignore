@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+high_scores.json
+calibration.json
