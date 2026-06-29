@@ -4,10 +4,10 @@ An interactive 3D arcade fruit-cutting game in Python using Pygame and OpenCV. S
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-* **👐 Hand Gesture Tracking (Default)**: Employs **MediaPipe Tasks HandLandmarker** to track the player's hand skeleton in real-time. The laser blade attaches directly to your index finger tip. Z-depth is estimated via hand scaling, allowing true 3D spatial coordinates.
-* **📱 Smartphone Sword Tracking (ArUco)**: Displays a custom ArUco marker (`aruco_marker.png`) on your phone to track position, depth, and tilt angle with high responsiveness.
+* ** Hand Gesture Tracking (Default)**: Employs **MediaPipe Tasks HandLandmarker** to track the player's hand skeleton in real-time. The laser blade attaches directly to your index finger tip. Z-depth is estimated via hand scaling, allowing true 3D spatial coordinates.
+* ** Smartphone Sword Tracking (ArUco)**: Displays a custom ArUco marker (`aruco_marker.png`) on your phone to track position, depth, and tilt angle with high responsiveness.
 * ** Colored Marker Tracking (HSV Fallback)**: Segments objects based on customized HSV colors (e.g. neon green objects) using OpenCV contours.
 * ** Swept-Area Slicing Physics**: Solves the "bullet-through-paper" collision skip bug. Slicing checks verify if fruits intersect a 5-line swept quadrangle bounding the previous and current frame positions, guaranteeing 100% slice reliability during rapid swings.
 * ** Float-Trajectory Projection**: Gravity (deceleration) and upward velocities are balanced to push fruits into high, floating arcs on a scrolling pseudo-3D neon perspective grid.
